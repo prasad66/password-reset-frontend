@@ -20,12 +20,10 @@ import LoaderPage from './LoaderPage';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/VisibilityOff';
 import IconButton from '@mui/material/IconButton';
-import env from 'react-dotenv'
 
 
 const Login = () => {
     const navigate = useNavigate();
-console.log(env.REACT_APP_API_URL)
     React.useEffect(() => {
 
         if (isExpired(localStorage.getItem('token'))) {
@@ -79,6 +77,9 @@ console.log(env.REACT_APP_API_URL)
         navigate('/welcome');
 
     }
+
+    document.title='Login'
+
 
     return (
         !loading ? (<LoginPage className="container-fluid">

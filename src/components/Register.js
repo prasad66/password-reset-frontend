@@ -100,6 +100,9 @@ const Register = () => {
 
     }
 
+    document.title='Register'
+
+
     return (
         loading ? <LoaderPage /> : (
             <RegisterPage className="container-fluid">

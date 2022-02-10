@@ -11,7 +11,6 @@ const ForgotPasswordRedirect = () => {
     const redirect = async () => {
         const token = params.token;
         const verifyString = params.verifyString;
-        console.log(token, verifyString);
         const response = await fetch(`${API_URL}/forgot-password/verify/${token}/${verifyString}`, {
             method: "POST",
             headers: {
@@ -34,6 +33,7 @@ const ForgotPasswordRedirect = () => {
     };
 
     redirect();
+    document.title='Redirect';
     return <LoaderPage />;
 };
 

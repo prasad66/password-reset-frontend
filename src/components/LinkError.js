@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 const LinkError = () => {
+    document.title='Error';
 
     return (
         <RegisterPage className="container-fluid">

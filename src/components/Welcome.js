@@ -20,6 +20,8 @@ const Welcome = () => {
 
     const handleLoading = () => setLoading(true);
 
+    document.title='Home';
+    
     return <div>
         {loading ? <LoaderPage /> : (<>
             <ResponsiveAppBar setLoading={handleLoading} />

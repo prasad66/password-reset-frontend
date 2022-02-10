@@ -69,6 +69,9 @@ const ResetPassword = () => {
         return;
 
     }
+
+    document.title='Change Password'
+
     return (
         loading ? <LoaderPage /> : (
             <ResetPasswordPage className="container-fluid">

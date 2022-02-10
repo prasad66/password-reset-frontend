@@ -66,6 +66,9 @@ const ForgotPassswordForm = () => {
         return;
 
     }
+
+    document.title='Forgot Password'
+
     return (!loading ? (
         <ForgotPasswordPage className="container-fluid">
 
