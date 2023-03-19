@@ -1,1 +1,1 @@
-export const API_URL = `https://pwd-rst.herokuapp.com/password`
+export const API_URL = `https://pwd-rst-be.vercel.app/password`
